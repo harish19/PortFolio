@@ -2,39 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* UI Architect Portfolio Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core palette - sophisticated blues and neutrals */
+    --background: 0 0% 99%;
+    --foreground: 215 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 215 85% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 215 85% 65%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 215 15% 95%;
+    --secondary-foreground: 215 25% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 215 15% 96%;
+    --muted-foreground: 215 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 215 85% 95%;
+    --accent-foreground: 215 85% 25%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 215 15% 90%;
+    --input: 215 15% 90%;
+    --ring: 215 85% 55%;
+
+    /* Gradient system */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+    --gradient-hero: linear-gradient(135deg, hsl(215 85% 55%), hsl(240 85% 65%));
+
+    /* Shadow system */
+    --shadow-elegant: 0 10px 40px -15px hsl(var(--primary) / 0.15);
+    --shadow-card: 0 4px 20px -4px hsl(215 25% 15% / 0.08);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --radius: 0.5rem;
 
@@ -101,5 +115,75 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1;
+  }
+}
+
+@layer components {
+  /* Hero variants */
+  .hero-button {
+    @apply bg-gradient-to-r from-primary to-primary-glow text-primary-foreground
+           shadow-elegant hover:shadow-glow transition-all duration-300
+           hover:scale-105 font-medium;
+  }
+  
+  .hero-button-outline {
+    @apply border border-primary/20 bg-background/80 backdrop-blur-sm 
+           text-primary hover:bg-primary hover:text-primary-foreground
+           transition-all duration-300 hover:shadow-elegant;
+  }
+
+  /* Card variants */
+  .card-elegant {
+    @apply bg-card/80 backdrop-blur-sm border border-border/50 
+           shadow-card hover:shadow-elegant transition-all duration-300
+           hover:-translate-y-1;
+  }
+
+  /* Animation utilities */
+  .animate-fade-up {
+    animation: fade-up 0.6s ease-out forwards;
+  }
+  
+  .animate-fade-in-delay {
+    animation: fade-in 0.8s ease-out 0.3s both;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-glow;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent;
+  }
+  
+  .bg-hero-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-subtle-gradient {
+    background: var(--gradient-subtle);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
