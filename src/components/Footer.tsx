@@ -6,7 +6,7 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: <Mail className="w-5 h-5" />,
-      href: "mailto:hello@uiarchitect.dev",
+      href: "mailto:kj.harish19@gmail.com",
       label: "Email"
     },
     {
@@ -26,9 +26,9 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
-            <div className="text-2xl font-bold text-gradient mb-2">UI Architect</div>
+            <div className="text-2xl font-bold text-gradient mb-2">HARISH KJ</div>
             <p className="text-muted-foreground text-sm">
-              Crafting exceptional digital experiences
+              UI Architect & Manager - Bengaluru, India
             </p>
           </div>
 
@@ -50,7 +50,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-border/50 text-center">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} UI Architect. All rights reserved.
+            © {currentYear} Harish KJ. All rights reserved.
           </p>
         </div>
       </div>

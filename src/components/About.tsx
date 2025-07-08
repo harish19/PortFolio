@@ -4,9 +4,9 @@ import { Code, Palette, Users, Zap } from "lucide-react";
 
 const About = () => {
   const skills = [
-    "React", "TypeScript", "Angular", "Node.js", "Express.js", "Hapi.js", 
-    "Figma", "Tailwind CSS", "Next.js", "Design Systems", 
-    "Prototyping", "User Research", "Accessibility"
+    "Angular", "React.js", "JavaScript", "Node.js", "Express.js", "HTML5", 
+    "CSS3", "TypeScript", "Angular.js", "jQuery", "Fabric.js", "MEAN Stack", 
+    "MVC", "JSON", "AJAX", "DOM", "UI Development"
   ];
 
   const highlights = [
@@ -40,9 +40,9 @@ const About = () => {
             About <span className="text-gradient">Me</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate UI architect with 8+ years of experience creating 
-            exceptional digital experiences. I specialize in bridging the gap between 
-            design and development, ensuring every interface is both beautiful and functional.
+            I'm a passionate UI Architect and Manager with 12+ years of experience from Bengaluru, India. 
+            I focus on front-end development with HTML, CSS, and JavaScript, staying current with 
+            new web technologies and following progressive enhancement principles.
           </p>
         </div>
 

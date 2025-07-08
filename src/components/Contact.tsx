@@ -3,27 +3,27 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Github, ExternalLink, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 const Contact = () => {
   const socialLinks = [
     {
       name: "Email",
       icon: <Mail className="w-5 h-5" />,
-      href: "mailto:hello@uiarchitect.dev",
-      label: "hello@uiarchitect.dev"
+      href: "mailto:kj.harish19@gmail.com",
+      label: "kj.harish19@gmail.com"
     },
     {
-      name: "GitHub",
-      icon: <Github className="w-5 h-5" />,
-      href: "https://github.com",
-      label: "github.com/uiarchitect"
+      name: "Phone",
+      icon: <Phone className="w-5 h-5" />,
+      href: "tel:+919738124129",
+      label: "+91 9738124129"
     },
     {
-      name: "Portfolio",
-      icon: <ExternalLink className="w-5 h-5" />,
-      href: "https://dribbble.com",
-      label: "View Full Portfolio"
+      name: "Location",
+      icon: <MapPin className="w-5 h-5" />,
+      href: "#",
+      label: "Bengaluru, India"
     }
   ];
 
