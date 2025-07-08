@@ -4,8 +4,9 @@ import { Code, Palette, Users, Zap } from "lucide-react";
 
 const About = () => {
   const skills = [
-    "React", "TypeScript", "Figma", "Tailwind CSS", "Next.js", 
-    "Design Systems", "Prototyping", "User Research", "Accessibility"
+    "React", "TypeScript", "Angular", "Node.js", "Express.js", "Hapi.js", 
+    "Figma", "Tailwind CSS", "Next.js", "Design Systems", 
+    "Prototyping", "User Research", "Accessibility"
   ];
 
   const highlights = [
