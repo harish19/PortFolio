@@ -6,36 +6,58 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "Design System Pro",
-      description: "A comprehensive design system built for a fintech startup, featuring 50+ components, dark mode support, and accessibility compliance.",
-      technologies: ["React", "TypeScript", "Storybook", "Figma"],
+      title: "Electronic Express",
+      description: "UI architecture and team management for America's largest independent consumer electronics retailer in Tennessee. Leading frontend development for an established family business since 1983.",
+      technologies: ["Next.js", "React.js", "Express.js", "UI Management"],
       link: "#",
       github: "#",
-      featured: true
+      featured: true,
+      period: "Jan 2024 - Present"
     },
     {
-      title: "E-commerce Platform",
-      description: "Modern e-commerce platform with advanced filtering, real-time inventory, and seamless checkout experience.",
-      technologies: ["Next.js", "Tailwind", "Stripe", "Framer Motion"],
+      title: "CommercialEVs Marketplace",
+      description: "Revolutionary platform for commercial vehicle lifecycle management. Built groundbreaking marketplace for SHAED's sustainable transportation solutions with micro-application architecture.",
+      technologies: ["Next.js", "React.js", "Micro Applications", "UI Architecture"],
       link: "#",
       github: "#",
-      featured: true
+      featured: true,
+      period: "Jan 2024 - Present"
     },
     {
-      title: "Analytics Dashboard",
-      description: "Real-time analytics dashboard with interactive charts, custom visualizations, and responsive design.",
-      technologies: ["React", "D3.js", "WebSocket", "Chart.js"],
+      title: "AllenBrothers E-commerce",
+      description: "Premium meat distributor's online store serving top chefs and restaurants nationally. Managed UI team for meticulous e-commerce platform with custom portioning and specifications.",
+      technologies: ["Next.js", "React.js", "Express.js", "SCSS", "Nginx"],
       link: "#",
       github: "#",
-      featured: false
+      featured: false,
+      period: "Jan 2023 - Dec 2023"
     },
     {
-      title: "SaaS Landing Page",
-      description: "High-converting landing page with optimized performance, SEO, and lead generation features.",
-      technologies: ["Astro", "Tailwind", "Alpine.js", "Netlify"],
+      title: "Retisio DXH Platform",
+      description: "Omnichannel retail content management system with AI-powered tools for search, recommendations, and analytics. Micro applications architecture for personalized shopping experiences.",
+      technologies: ["React.js", "Express.js", "Nginx", "AI Integration"],
       link: "#",
       github: "#",
-      featured: false
+      featured: false,
+      period: "Dec 2020 - Nov 2022"
+    },
+    {
+      title: "BrandsMart USA",
+      description: "Leading appliances and electronics retailer in Atlanta and South Florida. Frontend development for 10 store locations serving millions of customers.",
+      technologies: ["React.js", "JavaScript", "CSS3", "HTML5"],
+      link: "#",
+      github: "#",
+      featured: false,
+      period: "Jun 2019 - Present"
+    },
+    {
+      title: "Liverpool Department Stores",
+      description: "Mexico's largest department store chain with 85 locations. UI development for retail platform serving 23 shopping malls and specialized boutiques.",
+      technologies: ["JavaScript", "CSS3", "HTML5", "jQuery"],
+      link: "#",
+      github: "#",
+      featured: false,
+      period: "Jan 2019 - Jun 2019"
     }
   ];
 
