@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Mail, ExternalLink } from "lucide-react";
-import heroImage from "@/assets/hero-bg.jpg";
+import heroImage from "@/assets/tech-hero-bg.jpg";
 
 const Hero = () => {
   return (
@@ -17,8 +17,7 @@ const Hero = () => {
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <div className="animate-fade-up">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="text-primary-foreground">HARISH</span>{" "}
-            <span className="text-gradient">KJ</span>
+            <span className="text-gradient">KJH</span>
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
             UI Architect & UI Manager with 12+ years of experience crafting 

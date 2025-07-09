@@ -26,7 +26,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
-            <div className="text-2xl font-bold text-gradient mb-2">HARISH KJ</div>
+            <div className="text-2xl font-bold text-gradient mb-2">KJH</div>
             <p className="text-muted-foreground text-sm">
               UI Architect & Manager - Bengaluru, India
             </p>
