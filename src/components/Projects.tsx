@@ -58,6 +58,15 @@ const Projects = () => {
       github: "#",
       featured: false,
       period: "Jan 2019 - Jun 2019"
+    },
+    {
+      title: "Kohl's Corporation",
+      description: "American department store retailing chain founded in 1927. Frontend development for one of America's largest department store networks with hundreds of locations nationwide.",
+      technologies: ["JavaScript", "CSS3", "HTML5", "jQuery"],
+      link: "#",
+      github: "#",
+      featured: false,
+      period: "Feb 2017 - Dec 2018"
     }
   ];
 
